@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>Shopping Card</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style_shopping.css">
+        <script src="https://kit.fontawesome.com/b711bdf1cb.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <img class="logo" src="logo.png">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">how It Works</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our menu
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Pick your meals</a>
+                    <a class="dropdown-item" href="#">Recipe Categories</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">FAQs & Support</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Gifts</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav> 
+        <!--fin nav bar-->
+        <!--carouse-->
+        
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="0">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video src="./video6.mp4" muted="false" autoplay="true" class="d-block w-100"></video>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Home Cooking Made Simple</h2>
+                      <div class=""><p style="color:#008600;">Pick Your Meals</p></div>
+                      
+                    </div>
+                  </div>
+
+                <div class="carousel-item">
+                    <img src="https://img.huffingtonpost.com/asset/5e444ca9210000f600e94ec1.gif?ops=scalefit_720_noupscale" hei
+                    style="height: 400px;"
+                         class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+              
+              
+              <div class="carousel-item">
+                <img src="https://cdn.shopify.com/s/files/1/1281/9353/files/banner-animate_1200x.gif?v=1561751054" style="height: 400px;" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!--fin carouse-->
+          
+          <!--card1-->
+          <div class="prices">
+            <span>Total Price:</span>
+            <span class="total_price">0</span>
+          </div>
+          <div class="card-deck">
+            
+            <div class="card">
+              <img class="card-img-top" alt="Crispy Parmesan Chicken" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/5e25f50779260e7a2945d952-a6d38e25.jpg" data-hj-ignore-attributes="">
+              
+              <div class="card-body">
+                <h5 class="card-title">Crispy Parmesan Chicken</h5>
+                <p class="card-text">Easy Cleanup.</p>
+                <span class="price">30</span>TND
+
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" alt="Melty Monterey Jack Burgers" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/melty-monterey-jack-burgers-bfe0a19b.jpg" data-hj-ignore-attributes="">
+              
+              <div class="card-body">
+                <h5 class="card-title">Melty Monterey Jack Burgers</h5>
+                <p class="card-text">with Red Onion Jam, Garlic Mayo & Crispy Breaded.</p>
+                <span class="price">40</span>TND
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" alt="Pork and Veggie Bibimbap" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/pork-and-veggie-bibimbap-72982e4d.jpg" data-hj-ignore-attributes="">
+              
+              <div class="card-body">
+                <h5 class="card-title">Pork and Veggie Bibimbap</h5>
+                <p class="card-text">with Mushrooms, Carrots & Jasmine Rice.</p>
+                <span class="price">70</span>TND
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+               
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!--end card1-->
+          <!--card2-->
+          <div class="card-deck">
+            
+            <div class="card">
+              
+              <img class="card-img-top" alt="Ginger Lime Salmon" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/ginger-lime-salmon-96cd524b.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Ginger Lime Salmon</h5>
+                <p class="card-text">with Scallion Rice & Roasted Sesame Broccoli.</p>
+                <span class="price">50</span>TND
+
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            <div class="card">
+            
+              <img class="card-img-top" alt="Veggie Baked Penne" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/veggie-baked-penne-d3100562.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Veggie Baked Penne</h5>
+                <p class="card-text">with Herbed Ricotta & Mozzarella.</p>
+                <span class="price">40</span>TND
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            <div class="card">
+              
+              <img class="card-img-top" alt="Honey Sriracha Pork Tenderloin" src="https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/5e304f486fbd5e360278ce85-cee677ee.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Honey Sriracha Pork Tenderloin</h5>
+                <p class="card-text">with Roasted Sesame Carrots & Cilantro-Lime Rice.</p>
+                <span class="price">70</span>TND
+              </div>
+              <div class="card-footer d-flex align-items-baseline justify-content-around">
+                <input class="remove_btn" type="image" src="remove.png" >
+                <i class="far fa-heart"></i>
+                <button type="button" class="btn btn-success minus_btn">-</button>
+                <input type="text" name="text" id="quantity" class="quantity" value="0">
+                
+                <button type="button" class="btn btn-success plus_btn">+</button>
+              </div>
+            </div>
+            
+          </div>
+          <!--fin card2-->
+          <!--footer-->
+          <div class="row  .bg-light">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body2  ">
+                  <h5 class="card-title">SERVICE</h5>
+                  <a href="#" class="text-success">Our Menu</a><br/>
+                  <a href="#" class="text-success">How It Works</a><br/>
+                  <a href="#" class="text-success">Gift Cards</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body2">
+                  <h5 class="card-title">RESOURCES</h5>
+                  <a href="#" class="text-success">The Table</a><br/>
+                  <a href="#" class="text-success">Recipe Categories</a><br/>
+                  <a href="#" class="text-success">Kitchenware</a><br/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--fin footer-->
+          <script src="script.js"></script>
+          <script src="https://kit.fontawesome.com/b711bdf1cb.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </body>
+</hmtl>
